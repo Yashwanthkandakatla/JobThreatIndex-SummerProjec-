@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workload Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Workload Calculator</h1>
+    <form id="aiForm">
+        <label for="tasks">Tasks:</label>
+        <input type="text" id="tasks" name="tasks" required>
+
+        <label for="aiModels">AI Models:</label>
+        <input type="text" id="aiModels" name="aiModels" required>
+
+        <label for="aiWorkloadRatio">AI Workload Ratio(recommended btw 0.1 to 0.15):</label>
+        <input type="text" id="aiWorkloadRatio" name="aiWorkloadRatio" required>
+
+        <label for="jobTitleCode">Job Title Code:</label>
+        <input type="text" id="jobTitleCode" name="jobTitleCode" required>
+
+        
+        
+    <button onclick="moveToAnotherPage()">Calculate Workload</button>
+
+    <script>
+        function moveToAnotherPage() {
+            // Redirect to another page
+            window.location.href = 'index2.html';
+        }
+    </script>
+    </form>
+
+    <div id="result"></div>
+
+    
+</body>
+</html>
